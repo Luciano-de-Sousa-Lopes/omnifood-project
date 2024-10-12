@@ -52,6 +52,27 @@ body {
 
 /****************************************/
 /* GENERAL REUSABLE COMPONENTS */
+
+.container {
+  /* 1140px */
+  max-width: 75rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+.grid {
+  display: grid;
+  gap: 6rem;
+}
+
+.grid--2-cols {
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.grid--3-cols {
+  grid-template-columns: repeat(3, 1fr);
+}
+
 /* GENERIC SPACING */
 .margin-right-sm {
   margin-right: 1rem !important;
@@ -216,4 +237,19 @@ body {
   color: #b8651b;
   font-weight: 700;
 }
+/****************************************/
+
+/****************************************/
+/* HOW IT WORKS SECTION */
+.section-how-it-works {
+  padding: 6rem 0;
+  background-color: orangered;
+}
+
+.section-how-it-works div div {
+  padding: 6.25rem;
+  font-size: 3.125rem;
+  background-color: #555;
+}
+
 /****************************************/
