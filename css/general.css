@@ -26,7 +26,7 @@ Paragraph default: 1.6
 
 ---- 02 COLORS
 - Primary: #e67e22
-- Tints: #fdf2e9, #f3bf91, #f8d8bd
+- Tints: #fdf2e9, #f3bf91, #f8d8bd, #eb984e
 - Shades: #cf711f, #b8651b
 - Accents:
 - Grays:
@@ -35,8 +35,9 @@ Paragraph default: 1.6
 #333
 
 ---- 05 SHADOWS
+  box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.095);
 
----- 06 BORDER-RADIUS
+  ---- 06 BORDER-RADIUS
 Default; 9px
 12px
 
