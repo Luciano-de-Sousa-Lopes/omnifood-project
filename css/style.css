@@ -350,8 +350,8 @@
 .gallery-item img:hover {
   transform: scale(1.1);
 }
-
 /****************************************/
+
 /****************************************/
 /* PRICING SECTION */
 .section-pricing {
@@ -381,6 +381,7 @@
   transform: rotate(45deg);
   background-color: #ffd43b;
   padding: 0.5rem 4rem;
+  word-spacing: 0.1rem;
 }
 
 .pricing-plan--starter {
@@ -434,5 +435,37 @@
   text-align: center;
   margin-top: 3rem;
 }
+
+.plan-details {
+  font-size: 1rem;
+  line-height: 1rem;
+  text-align: center;
+}
+
+.feature-icon {
+  color: #e67e22;
+  height: 2rem;
+  width: 2rem;
+  margin-bottom: 1rem;
+  background-color: #fdf2e9;
+  padding: 1rem;
+  border-radius: 50%;
+}
+
+.feature-title {
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.feature-text {
+  font-size: 1.125rem;
+  line-height: 1.125rem;
+}
+/****************************************/
+
+/****************************************/
+/* CALL TO ACTION SECTION */
 
 /****************************************/
