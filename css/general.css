@@ -27,9 +27,11 @@ Paragraph default: 1.6
 ---- 02 COLORS
 - Primary: #e67e22
 - Tints: #fdf2e9, #f3bf91, #f8d8bd, #eb984e
-- Shades: #cf711f, #b8651b
+- Shades: #cf711f, #b8651b, #45260a
 - Accents:
 - Grays:
+#888
+#767676 (lightest gray allowed on #ffffff)
 #6f6f6f (lightest gray allowed on #fdf2e9)
 #555
 #333
@@ -91,6 +93,10 @@ body {
   grid-template-columns: repeat(4, 1fr);
 }
 
+.grid--5-cols {
+  grid-template-columns: repeat(5, 1fr);
+}
+
 .grid--center-verticaly {
   align-items: center;
 }
@@ -130,6 +136,7 @@ body {
   letter-spacing: 0.75px;
 }
 
+.btn,
 .btn:link,
 .btn:visited {
   font-size: 20px;
@@ -140,6 +147,9 @@ body {
   border-radius: 0.5rem;
   text-decoration: none;
   transition: all 0.3s;
+  border: none;
+  cursor: pointer;
+  font-family: inherit;
 }
 
 .btn--full:link,
@@ -162,6 +172,19 @@ body {
 .btn--outline:active {
   background-color: #fdf2e9;
   box-shadow: inset 0 0 0 2px #e67e22;
+  color: #555;
+}
+
+.btn--form {
+  background-color: #45260a;
+  color: #fdf2e9;
+  align-self: end;
+  padding: 0.75rem;
+  transition: all 0.5s;
+}
+
+.btn--form:hover {
+  background-color: #fff;
   color: #555;
 }
 
@@ -205,6 +228,13 @@ strong {
 .link:active {
   color: #cf711f;
   border-bottom-color: transparent;
+}
+
+*:focus {
+  outline: none;
+  /* outline: 4px dotted #e67e22;
+  outline-offset: 8px; */
+  box-shadow: 0 0 0 0.5rem rgba(230, 125, 34, 0.5);
 }
 
 /* HELPER/SETTING CLASSES */

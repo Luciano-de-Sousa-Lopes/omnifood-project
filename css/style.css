@@ -461,14 +461,14 @@
 
 .feature-text {
   font-size: 1.125rem;
-  line-height: 1.125rem;
+  line-height: 2.5rem;
 }
 /****************************************/
 
 /****************************************/
 /* CTA SECTION */
 .section-cta {
-  padding: 6rem 0;
+  padding: 3rem 0 8rem;
 }
 
 .cta {
@@ -479,9 +479,6 @@
   box-shadow: 0 1.5rem 3rem rgba(0, 0, 0, 0.2);
   border-radius: 0.75rem;
   overflow: hidden;
-
-  /* temp */
-  height: 30rem;
 }
 
 .cta-text-box {
@@ -490,7 +487,7 @@
 }
 
 .cta .heading-secondary {
-  color: #45260a;
+  color: inherit;
   margin-bottom: 2rem;
 }
 
@@ -516,6 +513,111 @@
   grid-template-columns: 1fr 1fr;
   column-gap: 2rem;
   row-gap: 1.5rem;
+}
+
+.cta-form label {
+  display: block;
+  font-size: 1rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+}
+
+.cta-form input,
+.cta-form select {
+  color: inherit;
+  width: 100%;
+  padding: 0.75rem;
+  font-size: 1.125rem;
+  font-family: inherit;
+  border: none;
+  background-color: #fdf2e9;
+  border-radius: 0.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.cta-form input::placeholder {
+  color: #aaa;
+}
+
+.cta *:focus {
+  outline: none;
+  box-shadow: 0 0 0 0.5rem rgba(253, 242, 233, 0.5);
+}
+/****************************************/
+
+/****************************************/
+/* FOOTER */
+.footer {
+  padding: 6rem 0;
+  border-top: 2px solid #eee;
+}
+
+.grid--footer {
+  grid-template-columns: repeat(2, 1.5fr) repeat(3, 1fr);
+}
+
+.logo-col {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer-logo {
+  display: block;
+  margin-bottom: 2rem;
+}
+
+.social-links {
+  list-style: none;
+  display: flex;
+  gap: 1.5rem;
+}
+
+.social-icon {
+  height: 1.5rem;
+  width: 1.5rem;
+}
+
+.copyright {
+  font-size: 0.875rem;
+  line-height: 1.6;
+  color: #767676;
+  margin-top: auto;
+}
+
+.footer-heading {
+  font-size: 1.125rem;
+  font-weight: 500;
+  margin-bottom: 3rem;
+}
+
+.contacts {
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+.address {
+  margin-bottom: 1.5rem;
+}
+
+.footer-nav {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.footer-link:link,
+.footer-link:visited {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #767676;
+  transition: all 0.3s;
+}
+
+.footer-link:hover,
+.footer-link:active {
+  color: #555;
 }
 
 /****************************************/
