@@ -54,11 +54,25 @@ Default; 9px
   box-sizing: border-box;
 }
 
+html {
+  /* 
+  Only works if there is nothing absolutely
+  positioned in relation to body
+  */
+  overflow-x: hidden;
+}
+
 body {
   font-family: "Rubik", sans-serif;
   line-height: 1;
   font-weight: 400;
   color: #555;
+
+  /* 
+  Only works if there is nothing absolutely
+  positioned in relation to body
+  */
+  overflow-x: hidden;
 }
 
 /****************************************/
@@ -215,9 +229,11 @@ strong {
 }
 
 .list-item {
+  font-size: 1.125rem;
   display: flex;
   align-items: center;
   gap: 1rem;
+  line-height: 1.2rem;
 }
 
 .list-icon {
