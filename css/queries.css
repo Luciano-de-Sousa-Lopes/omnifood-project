@@ -237,6 +237,7 @@
     margin-right: 1rem;
   }
 
+  /* HOW IT WORKS */
   .step-img-box {
     display: none;
   }
@@ -290,8 +291,6 @@
   .logos img {
     height: 2rem;
   }
-
-  /* HOW IT WORKS */
 
   /* MEALS */
   .grid--3-cols {
