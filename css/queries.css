@@ -238,8 +238,13 @@
   }
 
   /* HOW IT WORKS */
-  .step-img-box {
-    display: none;
+  .step-img-box:nth-child(2) {
+    margin-top: 3rem;
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
   }
 }
 
@@ -312,10 +317,6 @@
 
   .testimonial-img {
     width: 6rem;
-  }
-
-  .step-img-box {
-    display: none;
   }
 
   .testimonial-text {
