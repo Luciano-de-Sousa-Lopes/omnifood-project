@@ -293,6 +293,10 @@
   }
 
   /* MEALS */
+  .section-meals {
+    padding-top: 0;
+  }
+
   .grid--3-cols {
     display: flex;
     justify-content: center;
