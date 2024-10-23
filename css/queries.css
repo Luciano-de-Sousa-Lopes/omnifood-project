@@ -237,15 +237,34 @@
     margin-right: 1rem;
   }
 
-  .step-img-box {
-    display: none;
+  .cta-img-box {
+    height: 40rem;
+    grid-row: 1;
+  }
+
+  .cta {
+    grid-template-columns: 1fr;
+  }
+
+  .cta-text-box {
+    padding: 1rem;
+  }
+
+  /* HOW IT WORKS */
+  .step-img-box:nth-child(2) {
+    margin-top: 3rem;
+    grid-row: 1;
+  }
+
+  .step-img-box:nth-child(6) {
+    grid-row: 5;
   }
 }
 
 /*****************************************/
 /* BELOW 550px (Smartphones) */
 /*****************************************/
-@media (max-width: 34.375rem) {
+@media (max-width: 34.375em) {
   .hero {
     padding: 0 0.5rem;
   }
@@ -291,9 +310,11 @@
     height: 2rem;
   }
 
-  /* HOW IT WORKS */
-
   /* MEALS */
+  .section-meals {
+    padding-top: 0;
+  }
+
   .grid--3-cols {
     display: flex;
     justify-content: center;
@@ -309,10 +330,6 @@
 
   .testimonial-img {
     width: 6rem;
-  }
-
-  .step-img-box {
-    display: none;
   }
 
   .testimonial-text {
@@ -358,16 +375,8 @@
     padding: 1rem;
   }
 
-  .cta {
-    grid-template-columns: 1fr;
-  }
-
-  .cta-text-box {
-    padding: 1rem;
-  }
-
   .cta-img-box {
-    display: none;
+    height: 20rem;
   }
 
   /* FOOTER */
@@ -432,5 +441,18 @@
 
   .contacts .footer-link:last-child::before {
     content: "email: ";
+  }
+}
+
+/*****************************************/
+/* BELOW 350px (Smartphones) */
+/*****************************************/
+@media (max-width: 21.875em) {
+  html {
+    font-size: 50%;
+  }
+
+  .logos img {
+    height: 1.8rem;
   }
 }
